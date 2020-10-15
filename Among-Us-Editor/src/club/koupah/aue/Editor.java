@@ -144,8 +144,8 @@ public class Editor extends JFrame {
 		setContentPane(contentPanel);
 
 		// GUIScheme's eradicate the need for hti
-		// background = new Color(238, 238, 238);
-		// mainPanel.setBackground(background);
+		 background = new Color(238, 238, 238);
+		 mainPanel.setBackground(background);
 
 		Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
 			public void uncaughtException(Thread t, Throwable e) {
@@ -214,7 +214,7 @@ public class Editor extends JFrame {
 
 		// load playerPrefs settings (Commented out, we don't need to read twice on
 		// launch (We read it below))
-		// prefsManager.loadSettings();
+		 prefsManager.loadSettings();
 	}
 
 	// Made setupWindow function so we can set the layout then continue setting up
@@ -274,8 +274,8 @@ public class Editor extends JFrame {
 		tabbedPanel = new GUITabbedPanel();
 		tabbedPanel.setBounds(1, 54, width, 400);
 		// With the GUISchemes, this isn't needed
-		// tabbedPanel.setBackground(background);
-		// tabbedPanel.setForeground(Color.BLACK);
+		 tabbedPanel.setBackground(background);
+		 tabbedPanel.setForeground(Color.BLACK);
 		contentPanel.add(tabbedPanel);
 
 		// TODO remove these 3 lines, have some sort of for loop
